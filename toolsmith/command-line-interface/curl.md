@@ -3,5 +3,10 @@
 # 참고 링크
 - https://www.lesstif.com/pages/viewpage.action?pageId=14745703#curl설치및사용법-HTTPGET/POST,RESTAPI연계등-HTTPFORMPOST
 
-# POST 방식의 데이터 요청하기 
+# 활용법
+
+## POST 방식의 데이터 요청하기 
 - curl -X POST -d "csv_path=20170706/nickname.csv" -d "push_type=notice" 'https://admin.iz4blue.net/v2/users/get_user_tokens'
+
+## Socks5 를 경유하여 curl 요청
+- curl -x socks5h://localhost:3117 https://naver.com
